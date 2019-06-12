@@ -4,7 +4,11 @@ module.exports = {
   extends: ["airbnb", "prettier"],
   plugins: ["import", "prettier",  "babel"],
   parser: "babel-eslint",
-  env: { browser: true },
+  env: { 
+    browser: true,
+    node: true,
+    jest: true
+  },
   parserOptions: { ecmaVersion: 8, sourceType: "module" },
   rules: {
     "function-paren-newline": ["off", "never"], // turn this off
